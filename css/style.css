@@ -1,0 +1,14 @@
+.color-change{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+@keyframes moveText{
+    0%,
+    50%{
+        background-color: magenta;
+        left: 20px;
+    }
+    100%{
+        background-color: black;
+        left: 200px;
+    }
+}

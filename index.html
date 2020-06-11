@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= "stylesheet" href = "css/style.css"> 
+    <script src = 'js/main.js' defer></script>
+
+
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <div>
+        <h3 id="sampleText"></h3>
+        <button OnClick = "displayUserInfo(user_info)">Click me!</button>
+        
+    </div>
+    <div>
+        <h1 id = "letter-changer">Letter Changer</h1>
+    </div>
+    <form action="" name="testForm" id ="testForm">
+        <input type= "text" name = 'first-name' id = 'first-name'>
+        <input type= "text" name = 'last-name' id = 'last-name'>
+        <button id = "submitButton" OnClick= "event.preventDefault() ; submitForm() ">Submit</button>
+    </form>
+    <h2>Racer Data Form</h2>
+    <form action="" name= "racerData" id = "racerData">
+        <label for="lap">racer data lap</label>
+        <input type="text" name="lap" placeholder= "racer data lap">
+        <button id = "submitButton" OnClick = "event.preventDefault(); getJSON()">Submit</button>
+    </form>
+</body>
+</html>
