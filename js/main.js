@@ -1,4 +1,7 @@
 async function getJSON(){
+    season = document.getElementsByName('season').value
+    round = document.getElementsByName('round').value
+
     lap = document.getElementsByName('lap').value
     console.log(lap)
     await fetch(`https://ergast.com/api/f1/${season}/${round}/driverStandings.json`)
@@ -10,7 +13,7 @@ async function getJSON(){
            
         
             
-            for(let i = 0; i<3; i++){
+            for(let i = 0; i<7; i++){
                 let constructor_name =  rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Constructors[0].name
                 display_constructors = document.createElement('h1')
                 display_constructors.innerHTML = constructor_name;
