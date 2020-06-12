@@ -10,22 +10,9 @@ async function getJSON(){
             //top 7 drivers
             for(let i = 0; i<7; i++){
                 let position =  rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].position;
-                display_constructors = document.createElement('h1')
                 display_constructors.innerHTML = constructor_name;
                 document.body.append(display_constructors)
             }
-            
-            display_racers = document.createElement('h3');
-
-            if (!racers){
-                display_racers.innerHTML = "Loading..."
-                document.body.append(display_racers)
-            } else{
-                display_racers.innerHTML = racers;
-                document.body.append(display_racers);
-            }
-            console.log(year)
-        })
 
         .catch(error => {
             if (error) {
