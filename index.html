@@ -6,8 +6,6 @@
     <title>Positions</title>
     <link rel= "stylesheet" href = "css/style.css"> 
     <script src = 'js/main.js' defer></script>
-
-
 </head>
 <body>
     <h1>
@@ -16,40 +14,53 @@
     <div>
         <h1 id = "players">Players</h1>
     </div>
-    <form action="" name="postion" id ="position">
-        <input type= "text" name = 'first-name' id = 'first-name'>
-        <input type= "text" name = 'last-name' id = 'last-name'>
-        <button id = "submitButton" OnClick= "event.preventDefault() ; submitForm() ">Get Standings</button>
+    <form action="" name="form" id ="form">
+        <input type= "text" name = 'season' id = 'season_id'>
+        <input type= "text" name = 'round' id = 'round_id'>
+        <button id = "cells" OnClick= "event.preventDefault() ; submitForm() ">Get Standings</button>
     </form>
-   <div>
-       <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
+
+    <div class = 'table'>
+
+       <table class="table" id= "table_id">
+    <thead>
+        <tr>
+        <th scope="Position">Position</th>
+        <th scope="Name">Name</th>
+        <th scope="Nationality">Nationality</th>
+        <th scope="Sponsor">Sponsor</th>
+        <th scope="Points">Points</th>
+        </tr>
+    </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+  
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+  
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+
     </tr>
+    <tr>
+        <th scope="row">4</th>
+
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+      
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+       
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+       
+      </tr>
   </tbody>
 </table>
    </div>

@@ -3,14 +3,26 @@
     background-image: url("../css/nascar.gif");
     width: 1500px;
     height: 460px;
+    
 }
 *{
     font-family: sans-serif;
-    background: linear-gradient(to bottom, #ff9633 0%, #f52105 100%);
+    
 }
-.button{
-    color: #ffffff;
+/* .form{
+    
+} */
+body {
+    margin:50px 0px; padding:0px;
+    text-align:center;
+    align:center;
 }
-#table{
-    border: 0.5px solid rgba(4,45,106,.03)
+.table{
+    border: 0.5px solid rgba(7, 14, 26, 0.03);
+    /* border:1px solid black; */
+    margin-left:auto;
+    margin-right:auto;
+}
+body{
+    background: linear-gradient(to bottom, rgb(240, 225, 20) 0%, #f52105 100%);
 }
