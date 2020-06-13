@@ -1,10 +1,10 @@
 async function getJSON(){
-    season = document.getElementsByName('season').value;
+    year = document.getElementsByName('year').value;
     round = document.getElementsByName('round').value;
-    console.log(season)
+    console.log(year)
     console.log(round)
 //from class//
-    await fetch(`https://ergast.com/api/f1/${season}/${round}/driverStandings.json`)
+    await fetch(`https://ergast.com/api/f1/${year}/${round}/driverStandings.json`)
         .then(data => data.json())
         .then(rawData =>{
             //top 7 drivers looping through DriverStandings
@@ -39,3 +39,6 @@ async function getJSON(){
         })
 }
 
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];

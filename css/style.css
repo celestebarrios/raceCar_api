@@ -9,20 +9,14 @@
     font-family: sans-serif;
     
 }
-/* .form{
-    
-} */
-body {
-    margin:50px 0px; padding:0px;
-    text-align:center;
-    align:center;
-}
+
 .table{
     border: 0.5px solid rgba(7, 14, 26, 0.03);
-    /* border:1px solid black; */
     margin-left:auto;
     margin-right:auto;
 }
 body{
     background: linear-gradient(to bottom, rgb(240, 225, 20) 0%, #f52105 100%);
+    text-align:center;
+
 }
