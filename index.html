@@ -3,93 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Positions</title>
+    <title>Racer API</title>
     <link rel= "stylesheet" href = "css/style.css"> 
+    <link href="css/favicon.ico" rel="icon" type="image/x-icon" />
     <script src = 'js/main.js' defer></script>
 </head>
 <body>
-    <div>
-        <h1 id = "players">Players</h1>
-    </div>
+ 
+<h1>Racer API</h1>
     <form class = "form" action="" name="form" id ="form">
-        
-        <input type= "text" name = 'year' id = 'year_id'>
-        <input type= "text" name = 'round' id = 'round_id'>
-    
+      <label form="year"></label>
+        <input type= "text" name = 'year' id = 'year' placeholder="Enter Year">
+        <label form="round"></label>
+        <input type= "text" name = 'round' id = 'round' placeholder="Enter Round">
+        <button class = "button" id = "cells" OnClick= "event.preventDefault() ; submitForm() ">Get Standings</button>
+
     </form>
-
-    
-
-<table class="table" id= "table_id">
+<div>
+<table class="table" id= "table">
 
     <thead>
         <tr>
-        <th scope="Position">Position</th>
-        <th scope="Name">Name</th>
-        <th scope="Nationality">Nationality</th>
-        <th scope="Sponsor">Sponsor</th>
-        <th scope="Points">Points</th>
+        <th class="Position">Position</th>
+        <th class="Name">Name</th>
+        <th class="Nationality">Nationality</th>
+        <th class="Sponsor">Sponsor</th>
+        <th class="Points">Points</th>
         </tr>
     </thead>
 
 
     <tr>
-      <th scope="row">1</th>
+      <th class="row">1</th>
       <td id="Position1"></td>
-      <td id="Name1"></td>
+      <td id="last_name1"></td>
       <td id="Nationality1"></td>
       <td id="Sponsor1"></td>
       <td id="Points1"></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th class="row">2</th>
         <td id="Position2"></td>
-        <td id="Name2"></td>
+        <td id="last_name2"></td>
         <td id="Nationality2"></td>
         <td id="Sponsor2"></td>
         <td id="Points2"></td>
   
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th class="row">3</th>
         <td id="Position3"></td>
-        <td id="Name3"></td>
+        <td id="last_name3"></td>
         <td id="Nationality3"></td>
         <td id="Sponsor3"></td>
         <td id="Points3"></td>
 
     </tr>
     <tr>
-        <th scope="row">4</th>
+        <th class="row">4</th>
             <td id="Position4"></td>
-            <td id="Name4"></td>
+            <td id="last_name4"></td>
             <td id="Nationality4"></td>
             <td id="Sponsor4"></td>
             <td id="Points4"></td>
 
       </tr>
       <tr>
-        <th scope="row">5</th>
+        <th class="row">5</th>
             <td id="Position5"></td>
-            <td id="Name5"></td>
+            <td id="last_name5"></td>
             <td id="Nationality5"></td>
             <td id="Sponsor5"></td>
             <td id="Points5"></td>
       
       </tr>
       <tr>
-        <th scope="row">6</th>
+        <th class="row">6</th>
             <td id="Position6"></td>
-            <td id="Name6"></td>
+            <td id="last_name6"></td>
             <td id="Nationality6"></td>
             <td id="Sponsor6"></td>
             <td id="Points6"></td>
        
       </tr>
       <tr>
-        <th scope="row">7</th>
+        <th class="row">7</th>
             <td id="Position7"></td>
-            <td id="Name7"></td>
+            <td id="last_name7"></td>
             <td id="Nationality7"></td>
             <td id="Sponsor7"></td>
             <td id="Points7"></td>
@@ -97,7 +97,7 @@
       </tr>
 
 </table>
-
+</div>
 <!-- Trigger/Open the Modal -->
 <button id = "cells" OnClick= "event.preventDefault() ; submitForm() ">Get Standings</button>
 

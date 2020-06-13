@@ -1,8 +1,7 @@
 async function getJSON(){
     year = document.getElementsByName('year').value;
     round = document.getElementsByName('round').value;
-    console.log(year)
-    console.log(round)
+  
 //from class//
     await fetch(`https://ergast.com/api/f1/${year}/${round}/driverStandings.json`)
         .then(data => data.json())
@@ -11,10 +10,10 @@ async function getJSON(){
             for(let i = 0; i<7; i++){
                 let Position =  rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].position;
                 document.getElementById(`Position${i.toString()}`).innerHTML = Position;
+                document.body.append(Position)
             }
             for(let i = 0; i<7; i++){
                 let last_name =  rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].familyName;
-
                 document.getElementById(`last_name${i.toString()}`).innerHTML = last_name;
             }
             for(let i = 0; i<7; i++){
@@ -32,6 +31,8 @@ async function getJSON(){
             }
             
         }) 
+        console.log(year)
+        console.log(round)
         .catch(error => {
             if (error) {
                 console.log('an error has occured while getting the data');
@@ -39,6 +40,3 @@ async function getJSON(){
         })
 }
 
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("myBtn");
-let span = document.getElementsByClassName("close")[0];
